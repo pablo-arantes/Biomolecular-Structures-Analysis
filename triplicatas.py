@@ -1,3 +1,5 @@
+#Produces averages and standard deviations of identical data sets from, e.g. replicate simulations.
+
 import sys
 import numpy
 import math
