@@ -1,4 +1,7 @@
- #USAGE: python CN-overtime 507
+#The whole idea with the CN calculation is to evaluate the first solvation layer. For this, we must compute the optimum binding distance for this layer (which distance contemplates the first gaussian distribution). Thus, we should know beforehand this value to use as cutoff within the script. We just ran a single RDF calculation for 1 residue and look in which line the gaussian distribution ends (start counting after all headers). In theory, this distance should not change during the simulation.
+#After that, you just insert the referred line into the 'cutoff' parameter within the script and it should find the optimal binding distance for you.
+
+#USAGE: python CN-overtime 507
 
 import os
 import sys
